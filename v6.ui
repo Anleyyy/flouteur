@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Salamanblur - v1</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="image">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>640</width>
+      <height>360</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="parametre_qualite" native="true">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>20</y>
+      <width>291</width>
+      <height>360</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QWidget" name="zone_radio" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>271</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QRadioButton" name="normal">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>110</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Serif Hebrew</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Normal</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="sur">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Serif Hebrew</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sur</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="risque">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>70</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans Hebrew</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Risqué</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="info_detection">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>5</y>
+        <width>221</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans Hebrew</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Choisisez le seuil de &lt;br/&gt;détection des visages :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zone_selection" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>271</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_fich">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>251</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans Hebrew</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">text-align : center;</string>
+      </property>
+      <property name="text">
+       <string>Fichier sélectionnée :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>251</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans Hebrew</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Aucun fichier sélectionnée</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="zone_utile" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>390</y>
+      <width>641</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="going_folder">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>230</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Noto Serif Light</family>
+       <pointsize>13</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Dernier fichier</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Browser">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>230</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Noto Sans Light</family>
+       <pointsize>13</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Chercher fichier</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>581</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>WaitCursor</cursorShape>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Lancement">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>130</y>
+       <width>391</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Orbitron</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>LANCEMENT DU FLOUTAGE</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Etat_avancement">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>69</y>
+       <width>581</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Noto Sans Light</family>
+       <pointsize>13</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>En attente du lancement du floutage ...</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="zone_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>390</y>
+      <width>291</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuChercher_un_fichier">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionOuvrir_le_dernier_dossier_trait"/>
+    <addaction name="actionChercher_un_fichier"/>
+    <addaction name="actionLancer_le_floutage"/>
+   </widget>
+   <addaction name="menuChercher_un_fichier"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOuvrir_le_dernier_dossier_trait">
+   <property name="text">
+    <string>Ouvrir le dernier dossier traité</string>
+   </property>
+  </action>
+  <action name="actionChercher_un_fichier">
+   <property name="text">
+    <string>Chercher un fichier</string>
+   </property>
+  </action>
+  <action name="actionLancer_le_floutage">
+   <property name="text">
+    <string>Lancer le floutage</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>risque</tabstop>
+  <tabstop>normal</tabstop>
+  <tabstop>sur</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
